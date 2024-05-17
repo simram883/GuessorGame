@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesser Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Guesser Game</h1>
+        <div id="game">
+            <div class="input-group">
+                <label for="guesserNumber">Guesser, please take a number:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="guesserNumber" placeholder="Enter a number" aria-label="Guesser's number">
+                    <button class="toggle-password" aria-label="Toggle password visibility" onclick="togglePasswordVisibility()">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="playerNumber1">Player 1, please enter your number:</label>
+                <input type="number" id="playerNumber1" placeholder="Enter a number" aria-label="Player 1's number">
+            </div>
+            <div class="input-group">
+                <label for="playerNumber2">Player 2, please enter your number:</label>
+                <input type="number" id="playerNumber2" placeholder="Enter a number" aria-label="Player 2's number">
+            </div>
+            <div class="input-group">
+                <label for="playerNumber3">Player 3, please enter your number:</label>
+                <input type="number" id="playerNumber3" placeholder="Enter a number" aria-label="Player 3's number">
+            </div>
+            <button id="submit" onclick="compareNumbers()">Submit</button>
+            <div id="result" role="alert"></div>
+        </div>
+        <footer>
+            <p>Project Creator: Harshit Soni, Branch: IT, 3rd Year</p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
